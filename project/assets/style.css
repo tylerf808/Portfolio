@@ -1,0 +1,84 @@
+/*
+    Had a lot of trouble with this one, but will improve on it as I progress.
+    Main issues:
+        - Setting the subtitle inside the banner image
+        - Aligning and adding a right border to the aside
+        - Underlining the nav bar items in the style of the example
+        - How to use flex so that the aside and the main sit next to each other
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #13293d;
+}
+  
+h1 {
+    font-size: 200%;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    margin-left: -20px;
+    background-color: turquoise;
+}
+  
+h2 {
+    margin-left: -2%;
+    font-size: 250%;
+}
+  
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+}
+  
+nav a {
+    color: turquoise;
+    font-weight: bold;
+    text-decoration: underline;
+}
+  
+main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2% auto;
+}
+
+.subtitle {
+    position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.banner {
+    position: relative;
+}
+
+.contact-me ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 30%;
+}
